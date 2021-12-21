@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AA0E1291-5602-415A-ABF7-93B6A6544673}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>sachbobonho</RootNamespace>
+    <AssemblyName>sachbobonho</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="LiveCharts, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.0.9.7\lib\net45\LiveCharts.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts.WinForms, Version=0.9.7.1, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.WinForms.0.9.7.1\lib\net45\LiveCharts.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts.Wpf, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.Wpf.0.9.7\lib\net45\LiveCharts.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bangkhosachform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bangkhosachform.Designer.cs">
+      <DependentUpon>Bangkhosachform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChucvuForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChucvuForm.Designer.cs">
+      <DependentUpon>ChucvuForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clientfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clientfrm.Designer.cs">
+      <DependentUpon>Clientfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clieregfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clieregfrm.Designer.cs">
+      <DependentUpon>Clieregfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dangnhapkhachangform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dangnhapkhachangform.Designer.cs">
+      <DependentUpon>Dangnhapkhachangform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDangky.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDangky.Designer.cs">
+      <DependentUpon>FormDangky.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDangnhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDangnhap.Designer.cs">
+      <DependentUpon>FormDangnhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Giaodienchinhcuakhach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Giaodienchinhcuakhach.Designer.cs">
+      <DependentUpon>Giaodienchinhcuakhach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HoadonForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HoadonForm.Designer.cs">
+      <DependentUpon>HoadonForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Info.Designer.cs">
+      <DependentUpon>Info.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Optionform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Optionform.Designer.cs">
+      <DependentUpon>Optionform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PhieuphatForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PhieuphatForm.Designer.cs">
+      <DependentUpon>PhieuphatForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReportBookStore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportBookStore.Designer.cs">
+      <DependentUpon>ReportBookStore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportCashier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportCashier.Designer.cs">
+      <DependentUpon>ReportCashier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportform.Designer.cs">
+      <DependentUpon>Reportform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sachboboDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sachboboDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TacgiaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TacgiaForm.Designer.cs">
+      <DependentUpon>TacgiaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Themuonsachform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Themuonsachform.Designer.cs">
+      <DependentUpon>Themuonsachform.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Bangkhosachform.resx">
+      <DependentUpon>Bangkhosachform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChucvuForm.resx">
+      <DependentUpon>ChucvuForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clientfrm.resx">
+      <DependentUpon>Clientfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clieregfrm.resx">
+      <DependentUpon>Clieregfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dangnhapkhachangform.resx">
+      <DependentUpon>Dangnhapkhachangform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDangky.resx">
+      <DependentUpon>FormDangky.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDangnhap.resx">
+      <DependentUpon>FormDangnhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Giaodienchinhcuakhach.resx">
+      <DependentUpon>Giaodienchinhcuakhach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HoadonForm.resx">
+      <DependentUpon>HoadonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Info.resx">
+      <DependentUpon>Info.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Optionform.resx">
+      <DependentUpon>Optionform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PhieuphatForm.resx">
+      <DependentUpon>PhieuphatForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ReportBookStore.resx">
+      <DependentUpon>ReportBookStore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportCashier.resx">
+      <DependentUpon>ReportCashier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportform.resx">
+      <DependentUpon>Reportform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TacgiaForm.resx">
+      <DependentUpon>TacgiaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Themuonsachform.resx">
+      <DependentUpon>Themuonsachform.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="sachboboDataSet1.xsc">
+      <DependentUpon>sachboboDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="sachboboDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sachboboDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sachboboDataSet1.xss">
+      <DependentUpon>sachboboDataSet1.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info-4-256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\businessman-icon-18-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\businessman-icon-18-128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clietrans.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clieregfrmtrans.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exbtntrans.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sigibtntrans.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\returntrans.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clientlogfrmtrans.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
