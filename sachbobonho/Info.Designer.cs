@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -38,27 +37,20 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 133);
+            this.label1.Location = new System.Drawing.Point(12, 118);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(172, 38);
             this.label1.TabIndex = 0;
             this.label1.Text = "Phiên bản:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(198, 133);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(200, 38);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "v0.1 Bản thử";
             // 
             // label3
             // 
@@ -76,9 +68,9 @@
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(70, 245);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(360, 32);
+            this.label4.Size = new System.Drawing.Size(406, 32);
             this.label4.TabIndex = 3;
-            this.label4.Text = "-Cập nhật mục khách hàng.";
+            this.label4.Text = "Thêm mục quản lý khách hàng ";
             // 
             // label5
             // 
@@ -86,9 +78,9 @@
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(70, 293);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(337, 32);
+            this.label5.Size = new System.Drawing.Size(328, 32);
             this.label5.TabIndex = 4;
-            this.label5.Text = "-Cập nhật mục nhân viên.";
+            this.label5.Text = "Cập nhật mục nhân viên.";
             // 
             // label6
             // 
@@ -140,12 +132,44 @@
             this.label11.TabIndex = 10;
             this.label11.Text = "0833431305";
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(12, 506);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(522, 38);
+            this.label9.TabIndex = 11;
+            this.label9.Text = "Thời gian cập nhật bản mới sắp tới:";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(540, 512);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(142, 32);
+            this.label12.TabIndex = 12;
+            this.label12.Text = "20/2/2022";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(190, 118);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(200, 38);
+            this.label13.TabIndex = 1;
+            this.label13.Text = "v0.1 Bản thử";
+            // 
             // Info
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Firebrick;
-            this.ClientSize = new System.Drawing.Size(961, 534);
+            this.ClientSize = new System.Drawing.Size(1140, 636);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label8);
@@ -154,7 +178,7 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label13);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.SystemColors.Control;
@@ -170,7 +194,6 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
@@ -179,5 +202,8 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label13;
     }
 }

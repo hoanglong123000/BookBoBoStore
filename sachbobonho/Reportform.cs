@@ -120,5 +120,10 @@ namespace sachbobonho
             label5.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString() + " VND";
             label6.Text = dataGridView2.CurrentRow.Cells[0].Value.ToString();
         }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

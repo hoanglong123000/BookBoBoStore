@@ -26,7 +26,7 @@ namespace sachbobonho
         public void filldatafromdatabase()
         {
             conn.Open();
-            sqlcmd = new SqlCommand("select count(Mahoadon) as [Số lượng hóa đơn], datepart(month, getdate()) as [Tháng báo cáo], datepart(day, getdate()), datepart(year, getdate()) from dbo.Hoadon", conn);
+            sqlcmd = new SqlCommand("select count(Mahoadon) as [Số lượng hóa đơn], datepart(month, getdate()) as [Tháng báo cáo], datepart(day, getdate()) as [Ngày báo cáo], datepart(year, getdate()) as [Năm báo cáo] from dbo.Hoadon", conn);
             SqlCommand sqlcmd1 = new SqlCommand("select count(Mathe) as [Số lượng thẻ] from dbo.Themuonsach", conn);
             SqlCommand sqlcmd2 = new SqlCommand("select count(Maphieu) as [Số lượng phiếu] from dbo.Phieuphat", conn);
             SqlDataAdapter sqlDataAdapter = new SqlDataAdapter();
